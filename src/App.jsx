@@ -7,16 +7,16 @@ import { projectsData } from './data/projectsData';
 import { PortfolioGrid } from './components/portfolio/PortfolioGrid';
 import { ProjectModal } from './components/portfolio/ProjectModal';
 import { SocialLinkButton } from './components/ui/SocialLinkButton';
-import featuredVisual from '/imgs/photo_2025-12-12_12-05-37.jpg';
-import moDrawsCover from '/imgs/Mo -draws.png';
-import waymoCover from '/imgs/waymo.png';
-import forestStoryCover from '/imgs/Forest story.png';
-import forestStory2Cover from '/imgs/forest story 2.png';
-import forestStory3Cover from '/imgs/forest story 3.png';
-import bittyBrewCover from '/imgs/bitty brew.png';
-import bitty1Cover from '/imgs/bitty 1.png';
-import bitty2Cover from '/imgs/bitty 2.png';
-import princessCover from '/imgs/princess.png';
+import featuredVisual from '../imgs/photo_2025-12-12_12-05-37.jpg';
+import moDrawsCover from '../imgs/Mo -draws.png';
+import waymoCover from '../imgs/waymo.png';
+import forestStoryCover from '../imgs/Forest story.png';
+import forestStory2Cover from '../imgs/forest story 2.png';
+import forestStory3Cover from '../imgs/forest story 3.png';
+import bittyBrewCover from '../imgs/bitty brew.png';
+import bitty1Cover from '../imgs/bitty 1.png';
+import bitty2Cover from '../imgs/bitty 2.png';
+import princessCover from '../imgs/princess.png';
 
 const palette = {
   ink: '#000000',
