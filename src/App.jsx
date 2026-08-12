@@ -7,7 +7,7 @@ import { projectsData } from './data/projectsData';
 import { PortfolioGrid } from './components/portfolio/PortfolioGrid';
 import { ProjectModal } from './components/portfolio/ProjectModal';
 import { SocialLinkButton } from './components/ui/SocialLinkButton';
-import featuredVisual from '../imgs/photo_2025-12-12_12-05-37.jpg';
+import featuredVisual from '../imgs/photo_2025-12-12_12-05-37.jpg'; // Corrected path for featured visual
 import moDrawsCover from '../imgs/Mo -draws.png';
 import waymoCover from '../imgs/waymo.png';
 import forestStoryCover from '../imgs/Forest story.png';
