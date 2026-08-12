@@ -28,7 +28,7 @@ const palette = {
 
 const projectImageMap = {
   moDraws: moDrawsCover,
-  Waymo: waymoCover,
+  waymo: waymoCover,
   forestStory: forestStoryCover,
   forestStory2: forestStory2Cover,
   forestStory3: forestStory3Cover,
