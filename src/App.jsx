@@ -17,6 +17,7 @@ import bittyBrewCover from '../imgs/bitty brew.png';
 import bitty1Cover from '../imgs/bitty 1.png';
 import bitty2Cover from '../imgs/bitty 2.png';
 import princessCover from '../imgs/Princess.png';
+import carepulseCover from '../imgs/carepulse.svg';
 
 const palette = {
   ink: '#000000',
@@ -36,6 +37,7 @@ const projectImageMap = {
   bitty1: bitty1Cover,
   bitty2: bitty2Cover,
   princess: princessCover,
+  carepulse: carepulseCover,
 };
 
 
@@ -75,15 +77,15 @@ const certs = [
 ];
 
 const timeline = [
-  
-  
+
+
   {
     role: 'Brand Designer/Illustrator',
     date: '2021 — Present',
     description: 'Freelancer: Designing packaging, mockups, and identity systems for concept and client work.',
   },
   {
- 
+
     role: 'Student Onboarding Buddy (Volunteer)',
     date: 'Feb 2026 – May 2026',
     description: 'Miva Open University - Abuja/Remote. ',

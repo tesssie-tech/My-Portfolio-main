@@ -1,5 +1,27 @@
 export const projectsData = [
   {
+    id: 'carepulse-ehr',
+    slug: 'carepulse-ehr',
+    title: 'CarePulse EHR',
+    category: 'Frontend Development',
+    shortDescription: 'An offline-first, mobile PWA utilizing embedded on-device AI (TensorFlow.js) and IndexedDB to deliver sub-100ms diabetes screening and zero-loss patient records in low-resource clinics.',
+    longDescription: 'CarePulse EHR is an offline-first Electronic Health Record (PWA) and edge-AI screening tool engineered to eliminate clinical amnesia and deliver zero-connectivity diabetic risk stratification for rural Nigerian primary care clinics. Client-side data persistence via IndexedDB and Service Workers ensures 0% data loss during network blackouts, while a browser-based Artificial Neural Network (TensorFlow.js) achieves 92.5% accuracy and 81.7% sensitivity with real-time inference latencies under 100ms on low-end mobile devices (Tecno Spark 8P). Validated with 15 healthcare practitioners, earning a System Usability Scale (SUS) score of 72.4 (Grade B) and cutting patient registration time to under 45 seconds.',
+    coverImageKey: 'carepulse',
+    tags: ['React', 'TensorFlow.js', 'IndexedDB', 'PWA'],
+    featured: true,
+    tools: ['React', 'Tailwind CSS', 'JavaScript (ES6+)', 'IndexedDB', 'Service Workers', 'TensorFlow.js', 'Python (Keras/ANN)'],
+    links: {
+      live: null,
+      github: null,
+      behance: null,
+    },
+    details: {
+      role: 'Frontend Developer & ML Engineer',
+      timeline: 'Final Year Project',
+      client: 'Rural Primary Care Clinics (Nigeria)',
+    },
+  },
+  {
     id: 'web-waymo-clone',
     slug: 'waymo-clone',
     title: 'Waymo',
