@@ -11,7 +11,7 @@ export const projectsData = [
     featured: true,
     tools: ['React', 'Tailwind CSS', 'JavaScript (ES6+)', 'IndexedDB', 'Service Workers', 'TensorFlow.js', 'Python (Keras/ANN)'],
     links: {
-      live: null,
+      live: 'https://carepulse-ehr.onrender.com/',
       github: null,
       behance: null,
     },
