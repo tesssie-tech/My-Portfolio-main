@@ -339,7 +339,7 @@ export default function App() {
                       {currentProject.category}
                     </span>
                     <h3 className="mt-4 font-mono text-3xl font-black uppercase leading-tight">{currentProject.title}</h3>
-                    <p className="mt-3 font-mono text-sm leading-7">{currentProject.longDescription}</p>
+                    <p className="mt-3 font-mono text-sm leading-7">{currentProject.shortDescription}</p>
                   </div>
                   <div className="mt-5 flex flex-wrap gap-2">
                     {currentProject.tags.map((tag) => (
