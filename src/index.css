@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-width: 320px;
+	overflow-x: hidden;
+}
+
+@media (max-width: 380px) {
+	button,
+	a {
+		overflow-wrap: anywhere;
+	}
+}

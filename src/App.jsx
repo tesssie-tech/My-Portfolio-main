@@ -132,8 +132,8 @@ export default function App() {
 
       <header className="sticky top-0 z-50 border-b-[3px] border-black bg-[#f4f4f0]">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-3 border-2 border-black bg-[#A3E635] px-3 py-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-            <span className="font-mono text-sm font-bold uppercase tracking-[0.24em]">&lt;/&gt; Theresa</span>
+          <div className="flex min-w-0 items-center gap-2 border-2 border-black bg-[#A3E635] px-2 py-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:gap-3 sm:px-3">
+            <span className="min-w-0 truncate font-mono text-xs font-bold uppercase tracking-[0.12em] sm:text-sm sm:tracking-[0.24em]">&lt;/&gt; Theresa</span>
           </div>
 
           <nav className="hidden items-center gap-5 font-mono text-sm font-bold uppercase tracking-[0.22em] lg:flex">
@@ -154,7 +154,7 @@ export default function App() {
           <button
             type="button"
             onClick={() => setIsSideNavOpen((value) => !value)}
-            className="inline-flex items-center gap-2 border-2 border-black bg-[#A3E635] px-4 py-3 font-mono text-sm font-bold uppercase tracking-[0.18em] shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition hover:-translate-y-0.5 hover:-translate-x-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none lg:hidden"
+            className="inline-flex shrink-0 items-center gap-2 border-2 border-black bg-[#A3E635] px-3 py-3 font-mono text-xs font-bold uppercase tracking-[0.12em] shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition hover:-translate-y-0.5 hover:-translate-x-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none sm:px-4 sm:text-sm sm:tracking-[0.18em] lg:hidden"
             aria-expanded={isSideNavOpen}
             aria-controls="mobile-side-nav"
             aria-label={isSideNavOpen ? 'Close navigation' : 'Open navigation'}
@@ -209,7 +209,7 @@ export default function App() {
         </a>
       </aside>
 
-      <main className="mx-auto max-w-7xl space-y-8 px-4 py-6 pl-24 sm:px-6 sm:pl-28 md:pl-32 lg:px-8 lg:pl-8 lg:py-8">
+      <main className="mx-auto max-w-7xl space-y-8 px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
         <motion.section
           initial="hidden"
           whileInView="visible"
@@ -217,11 +217,11 @@ export default function App() {
           variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8 } } }}
           className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]"
         >
-          <div className="border-[3px] border-black bg-[#f4f4f0] p-6 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] sm:p-8">
+          <div className="border-[3px] border-black bg-[#f4f4f0] p-4 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] sm:p-8">
             <span className="inline-flex border-2 border-black bg-[#A3E635] px-3 py-1 font-mono text-xs font-bold uppercase tracking-[0.2em]">
               Hey, I&apos;m Theresa
             </span>
-            <h1 className="mt-5 max-w-3xl font-mono text-5xl font-black uppercase leading-[0.9] tracking-tight sm:text-6xl lg:text-7xl">
+            <h1 className="mt-5 max-w-3xl font-mono text-4xl font-black uppercase leading-[0.9] tracking-tight sm:text-6xl lg:text-7xl">
               Frontend Developer and Visual Designer.
             </h1>
             <p className="mt-5 max-w-2xl font-mono text-sm leading-7 sm:text-base">
@@ -252,7 +252,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="relative border-[3px] border-black bg-[#FF77BC] p-6 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] sm:p-8">
+          <div className="relative border-[3px] border-black bg-[#FF77BC] p-4 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] sm:p-8">
             <div className="absolute left-5 top-5 -rotate-3 border-2 border-black bg-[#7C3AED] px-3 py-1 font-mono text-xs font-bold uppercase text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
               Featured Visual
             </div>
@@ -307,9 +307,9 @@ export default function App() {
           variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8 } } }}
           id="projects"
           className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-          <div className="border-[3px] border-black bg-[#f4f4f0] p-6 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]">
-            <div className="mb-5 flex items-center justify-between gap-4">
-              <h2 className="font-mono text-2xl font-black uppercase tracking-tight sm:text-3xl">Featured Projects</h2>
+          <div className="border-[3px] border-black bg-[#f4f4f0] p-4 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] sm:p-6">
+            <div className="mb-5 flex flex-wrap items-center justify-between gap-4">
+              <h2 className="font-mono text-xl font-black uppercase tracking-tight sm:text-3xl">Featured Projects</h2>
               <div className="flex gap-2">
                 <button
                   type="button"
@@ -377,7 +377,7 @@ export default function App() {
             </div>
           </div>
 
-          <aside id="certifications" className="border-[3px] border-black bg-[#A3E635] p-6 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]">
+          <aside id="certifications" className="border-[3px] border-black bg-[#A3E635] p-4 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] sm:p-6">
             <h2 className="font-mono text-2xl font-black uppercase tracking-tight">Certifications</h2>
             <div className="mt-5 space-y-4">
               {certs.map((cert) => (
@@ -399,10 +399,10 @@ export default function App() {
         <motion.section
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.01 }}
           variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8 } } }}
           id="gallery"
-          className="border-[3px] border-black bg-[#f4f4f0] p-6 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]">
+          className="border-[3px] border-black bg-[#f4f4f0] p-4 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] sm:p-6">
           <h2 className="font-mono text-2xl font-black uppercase tracking-tight">Gallery</h2>
           <div className="mt-5">
             <PortfolioGrid projects={projectsData} onOpen={openProject} projectImageMap={projectImageMap} />
@@ -416,11 +416,11 @@ export default function App() {
           variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8 } } }}
           id="experience"
           className="grid gap-6 lg:grid-cols-[0.8fr_1.1fr_1fr]">
-          <div className="flex items-center justify-center border-[3px] border-black bg-[#FF77BC] p-6 text-center shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]">
+          <div className="flex items-center justify-center border-[3px] border-black bg-[#FF77BC] p-4 text-center shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] sm:p-6">
             <h2 className="font-mono text-2xl font-black uppercase tracking-tight text-black">Experience →</h2>
           </div>
 
-          <div className="border-[3px] border-black bg-[#f4f4f0] p-6 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]">
+          <div className="border-[3px] border-black bg-[#f4f4f0] p-4 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] sm:p-6">
             <div className="space-y-5">
               {timeline.map((item) => (
                 <div key={item.role} className="grid gap-3 border-b-2 border-black pb-5 last:border-b-0 last:pb-0 sm:grid-cols-[150px_1fr]">
@@ -439,17 +439,17 @@ export default function App() {
               href="https://docs.google.com/document/d/1JOooQl-ucNEzUb7gEOIo80N7-rpBWiXoOvKreULOj4w/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 border-2 border-black bg-[#A3E635] px-4 py-3 font-mono text-sm font-black uppercase shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] transition hover:-translate-y-0.5 hover:-translate-x-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none"
-            >
-              View Full Resume <MoveRight size={16} />
+                className="mt-6 inline-flex w-full items-center justify-center gap-2 border-2 border-black bg-[#A3E635] px-4 py-3 text-center font-mono text-sm font-black uppercase shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] transition hover:-translate-y-0.5 hover:-translate-x-0.5 active:translate-x-1 active:translate-y-1 active:shadow-none sm:w-fit"
+              >
+                  View Full Resume <MoveRight size={16} />
             </a>
           </div>
 
-          <div className="border-[3px] border-black bg-[#7C3AED] p-6 text-white shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]">
+          <div className="border-[3px] border-black bg-[#7C3AED] p-4 text-white shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] sm:p-6">
             <div className="flex items-center gap-3 font-mono text-xs font-black uppercase tracking-[0.25em]">
               <Star size={16} /> <span className="font-bold">Build something amazing together.</span>
             </div>
-            <h2 className="mt-5 max-w-md font-mono text-4xl font-black uppercase leading-[0.95] sm:text-5xl">
+            <h2 className="mt-5 max-w-md font-mono text-3xl font-black uppercase leading-[0.95] sm:text-5xl">
               Let&apos;s build something amazing together.
             </h2>
             <a
@@ -475,7 +475,7 @@ export default function App() {
           viewport={{ once: true, amount: 0.2 }}
           variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8 } } }}
           id="contact"
-          className="border-[3px] border-black bg-[#f4f4f0] p-6 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]"
+          className="border-[3px] border-black bg-[#f4f4f0] p-4 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] sm:p-6"
         >
           <h2 className="font-mono text-2xl font-black uppercase tracking-tight">Get In Touch</h2>
           <p className="mt-2 max-w-2xl font-mono text-sm leading-7">
